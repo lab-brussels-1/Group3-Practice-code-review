@@ -1,5 +1,15 @@
 import { difference } from './difference.js';
 
+describe('The arguments should be arrays', () => {
+  it('when arguments are not arrays throw error', () => {
+    expect(() => difference(null, [])).toThrow('arguments should be arrays');
+  });
+  it('when arguments are not arrays throw error', () => {
+    expect(() => difference([7, 9, 0], 8)).toThrow(
+      'arguments should be arrays',
+    );
+  });
+});
 describe('Creates an array of values that are in the first array, but not not in the second array.', () => {
   it('[2, 1], [2, 3]--> [1]', () => {
     expect(difference([2, 1], [2, 3])).toEqual([1]);
