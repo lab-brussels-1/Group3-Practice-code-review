@@ -8,8 +8,12 @@
  */
 
 export const intersection = (array = [], values = []) => {
-  if (typeof array !== 'object' || typeof values !== 'object') { throw new TypeError('arguments should be arrays'); }
-  if (array === null || values === null) { throw new Error('arguments should be arrays'); }
+  if (typeof array !== 'object' || typeof values !== 'object') {
+    throw new TypeError('arguments should be arrays');
+  }
+  if (array === null || values === null) {
+    throw new Error('arguments should be arrays');
+  }
   const newArray = [];
   array.forEach((element) => {
     if (!newArray.includes(element)) {
