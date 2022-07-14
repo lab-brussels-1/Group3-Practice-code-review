@@ -8,7 +8,8 @@
  */
 
 export const splitObject = (toSeparate = {}) => {
-  if (typeof toSeparate !== 'object') throw new TypeError('argument should be an object');
+  if (typeof toSeparate !== 'object')
+    throw new TypeError('argument should be an object');
   const newArray = [];
   for (const [key, value] of Object.entries(toSeparate)) {
     const obj = {};

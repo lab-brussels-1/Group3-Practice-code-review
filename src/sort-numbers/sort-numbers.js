@@ -1,3 +1,4 @@
+/* eslint-disable operator-linebreak */
 /**
  * Sorts an array of numbers from smallest to largest.
  *
@@ -6,7 +7,14 @@
  */
 
 export const sortNumbers = (arrayOfNumbers = []) => {
-  if (typeof arrayOfNumbers !== 'object' || arrayOfNumbers.includes(NaN) || arrayOfNumbers.includes(Infinity) || arrayOfNumbers.includes(-Infinity)) throw new Error('argument is not valid');
+  if (
+    typeof arrayOfNumbers !== 'object' ||
+    arrayOfNumbers.includes(NaN) ||
+    arrayOfNumbers.includes(Infinity) ||
+    arrayOfNumbers.includes(-Infinity)
+  ) {
+    throw new Error('argument is not valid');
+  }
   let sortedArray = [...arrayOfNumbers];
   sortedArray = sortedArray.sort((a, b) => {
     return a - b;
