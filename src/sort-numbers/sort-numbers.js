@@ -8,7 +8,6 @@
 
 export const sortNumbers = (arrayOfNumbers = []) => {
   if (
-    // eslint-disable-next-line operator-linebreak
     typeof arrayOfNumbers !== 'object' ||
     arrayOfNumbers.includes(NaN) ||
     arrayOfNumbers.includes(Infinity) ||
