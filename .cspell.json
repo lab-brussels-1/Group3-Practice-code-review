@@ -1,6 +1,8 @@
 {
   "language": "en",
-  "words": [],
+  "words": [
+    "linebreak"
+  ],
   "ignorePaths": [
     "node_modules/**",
     "package.json",
