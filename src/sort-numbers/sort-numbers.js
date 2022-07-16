@@ -7,9 +7,9 @@
 
 export const sortNumbers = (arrayOfNumbers = []) => {
   if (typeof arrayOfNumbers !== 'object'
-    || arrayOfNumbers.includes(NaN)
-    || arrayOfNumbers.includes(Infinity)
-    || arrayOfNumbers.includes(-Infinity)
+      || arrayOfNumbers.includes(NaN)
+      || arrayOfNumbers.includes(Infinity)
+      || arrayOfNumbers.includes(-Infinity)
   ) {
     throw new Error('argument is not valid');
   }
