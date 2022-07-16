@@ -6,10 +6,14 @@
  */
 
 export const sortNumbers = (arrayOfNumbers = []) => {
-  if (typeof arrayOfNumbers !== 'object'
-      || arrayOfNumbers.includes(NaN)
-      || arrayOfNumbers.includes(Infinity)
-      || arrayOfNumbers.includes(-Infinity)
+  if (
+    // eslint-disable-next-line operator-linebreak
+    typeof arrayOfNumbers !== 'object' ||
+    // eslint-disable-next-line operator-linebreak
+    arrayOfNumbers.includes(NaN) ||
+    // eslint-disable-next-line operator-linebreak
+    arrayOfNumbers.includes(Infinity) ||
+    arrayOfNumbers.includes(-Infinity)
   ) {
     throw new Error('argument is not valid');
   }
