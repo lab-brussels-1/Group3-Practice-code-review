@@ -6,8 +6,7 @@
  */
 
 export const sortNumbers = (arrayOfNumbers = []) => {
-  if (
-      typeof arrayOfNumbers !== 'object'
+  if (typeof arrayOfNumbers !== 'object'
     || arrayOfNumbers.includes(NaN)
     || arrayOfNumbers.includes(Infinity)
     || arrayOfNumbers.includes(-Infinity)
