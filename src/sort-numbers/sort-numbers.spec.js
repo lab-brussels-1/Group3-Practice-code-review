@@ -14,10 +14,7 @@ describe('Sorts an array of numbers from smallest to largest', () => {
   });
   it('only negative numbers', () => {
     expect(sortNumbers([-1000, -0.002, -1, -76])).toEqual([
-      -1000,
-      -76,
-      -1,
-      -0.002,
+      -1000, -76, -1, -0.002,
     ]);
   });
   it('sorted numbers should stay in the same order', () => {
