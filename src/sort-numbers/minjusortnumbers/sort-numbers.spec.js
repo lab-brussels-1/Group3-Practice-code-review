@@ -1,4 +1,4 @@
-import { sortNumbers } from './sort-numbers.js';
+import { sortNumbers } from './sort-number.js';
 
 describe('Sorts an array of numbers from smallest to largest', () => {
   it('integer numbers', () => {
