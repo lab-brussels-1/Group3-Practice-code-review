@@ -7,7 +7,7 @@
     "lint:js": "eslint --max-warnings=0 --ext=.js --format=codeframe",
     "lint:ls": "ls-lint",
     "lint:md": "markdownlint --ignore node_modules --ignore docs --config ./.markdownlint.jsonc --fix ./ ",
-    "test"   :    " node ./node_modules/jest/bin/jest.js ./src/sort-numbers/minjusortnumbers ",
+    "test"   :    "node --experimental-vm-modules node_modules/jest/bin/jest.js ./src/sort-numbers/minjusortnumbers ",
     "spell-check": "cspell  './**'"
   },
   "type": "module",
