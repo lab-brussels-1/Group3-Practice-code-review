@@ -66,4 +66,3 @@ describe('sortNumbers sorts an array of numbers', () => {
     });
   });
 });
-
