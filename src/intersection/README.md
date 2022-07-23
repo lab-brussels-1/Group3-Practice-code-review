@@ -13,7 +13,7 @@ helps you understand:
 /**
  * Creates an array of values that are in both the first and the second arrays.
  *
- * Repeated values are not duplicated in the return value, 
+ * Repeated values are not duplicated in the return value,
  * and the order of result values are determined by the first array.
  * **Note:** This function returns a new array, and has no side-effects.
  *
