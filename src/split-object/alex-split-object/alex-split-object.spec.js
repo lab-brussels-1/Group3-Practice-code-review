@@ -1,4 +1,4 @@
-import { splitObject } from './alex-split-object.js';
+/* import { splitObject } from './alex-split-object.js';
 
 for (const solution of [splitObject]) {
   describe(`${solution.name}: splits object in to arrays with entry name`, () => {
@@ -19,3 +19,4 @@ for (const solution of [splitObject]) {
     });
   });
 }
+*/

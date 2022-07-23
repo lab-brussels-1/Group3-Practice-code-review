@@ -10,5 +10,4 @@ export const sortNumbers = (array1) => {
   });
   return newSortNumbers;
 };
-const array = [6000, 3545, 65, 234];
-console.log(sortNumbers(array));
+

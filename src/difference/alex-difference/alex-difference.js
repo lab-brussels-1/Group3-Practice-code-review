@@ -24,5 +24,3 @@ export const difference = (array = [], values = []) => {
   });
   return newArray.filter((element) => values.includes(element) === false);
 };
-console.log(difference(['a', 1, 2, 3, 3, 3], [2, 3, 4, 8, 9]));
-console.log(difference([1, 2, 1, 'a'], [4, 2, 'b', 5]));
