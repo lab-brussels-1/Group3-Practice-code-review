@@ -1,9 +1,8 @@
-
-import { intersectingArrays } from './intersection.js';
+import { intersectArray} from './intersection.js';
 
 // tests
 
-for (const solution of [intersectingArrays]) {
+for (const solution of [intersectArray]) {
   describe(`${solution.name}: Returning duplicated values`, () => {
     describe('whole numbers', () => {
       it('', () => {
@@ -41,9 +40,7 @@ for (const solution of [intersectingArrays]) {
     describe('negative and positive numbers', () => {
       it('', () => {
         expect(solution([-1, -2, 3, 4, -5], [-1, -0.6, 3, 7, -5])).toEqual([
-          -1,
-          3,
-          -5,
+          -1, 3, -5,
         ]);
       });
       it('', () => {
@@ -54,13 +51,13 @@ for (const solution of [intersectingArrays]) {
     describe('has no side-effects', () => {
       it('returns a new array', () => {
         const noSideEffect = [];
-        const returned = intersectingArrays(noSideEffect);
+        const returned = intersectArray(noSideEffect);
         const areDifferent = noSideEffect !== returned;
         expect(areDifferent).toEqual(true);
       });
       it('does not modify the argument', () => {
         const noSideEffect = [3, 2, 1];
-        intersectingArrays(noSideEffect);
+        intersectArray(noSideEffect);
         expect(noSideEffect).toEqual([3, 2, 1]);
       });
     });
@@ -68,9 +65,7 @@ for (const solution of [intersectingArrays]) {
     describe('decimal and whole numbers', () => {
       it('', () => {
         expect(solution([1, 2, 0.3, 0.4, 5], [1, 0.6, 0.3, 0.7, 5])).toEqual([
-          1,
-          0.3,
-          5,
+          1, 0.3, 5,
         ]);
       });
       it('', () => {
@@ -81,4 +76,3 @@ for (const solution of [intersectingArrays]) {
     });
   });
 }
-

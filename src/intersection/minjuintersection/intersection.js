@@ -18,9 +18,8 @@
  * intersection([2, 1, 2], [2, 3]);
  * // -> [2]
  */
-export const intersectArray=(array=[],values=[])=>{
-    const Array=array.filter((element)=>values.includes(element),
-    );
-return Array;
+export const intersectArray = (array = [], values = []) => {
+  const Array = array.filter((element) => values.includes(element));
+  return Array;
 };
 intersectArray();
