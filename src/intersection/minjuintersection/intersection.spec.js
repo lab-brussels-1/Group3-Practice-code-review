@@ -1,4 +1,5 @@
 import { intersectArray} from './intersection.js';
+
 for (const solution of [intersectArray]) {
   describe(`${solution.name}: Returning duplicated values`, () => {
     describe('whole numbers', () => {
