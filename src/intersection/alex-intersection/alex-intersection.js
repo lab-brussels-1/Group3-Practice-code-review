@@ -13,4 +13,3 @@ export const intersection = (array = [], values = []) => {
   });
   return newArray.filter((element) => values.includes(element));
 };
-console.log(intersection([2, 1, 2, 3, 3, 3], [4, 8, 9, 2, 1]));
