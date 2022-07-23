@@ -1,8 +1,4 @@
-import { flatter } from './alex-deep-flat';
-/**
- * I imported a function flatter
- * I am gona test the function flatter
- */
+import { flatter } from './alex-deep-flat.js';
 
 for (const solution of [flatter]) {
   describe(`${solution.name}: flattens the nested array`, () => {
