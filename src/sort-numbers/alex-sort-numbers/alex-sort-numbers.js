@@ -10,4 +10,3 @@ export const sortNumbers = (array1) => {
   });
   return newSortNumbers;
 };
-

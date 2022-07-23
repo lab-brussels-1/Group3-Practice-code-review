@@ -10,7 +10,9 @@ for (const solution of [difference]) {
     });
     describe('it checks if the input is an object or not', () => {
       it('should give an error if the values are not array', () => {
-        expect(() => solution([1, 2, 3], null)).toThrow('input should be arrays');
+        expect(() => solution([1, 2, 3], null)).toThrow(
+          'input should be arrays',
+        );
       });
     });
     describe('it checks if the input is an object or not', () => {
