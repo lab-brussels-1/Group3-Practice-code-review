@@ -1,0 +1,6 @@
+You used PR's to change code in the main repo but only Maria's code is merged. There also commits being made in the main branch! This is never allowed
+Not all PR's are merged!
+The intersection exercise has not been completed for example.
+The other exercises are well done and well tested!
+
+I'm under the impression that only worked on this repo...
