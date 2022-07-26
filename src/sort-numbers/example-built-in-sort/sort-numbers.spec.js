@@ -1,4 +1,3 @@
-
 import { sortNumbers } from './sort-numbers.js';
 
 describe('sortNumbers sorts an array of numbers', () => {
@@ -67,4 +66,3 @@ describe('sortNumbers sorts an array of numbers', () => {
     });
   });
 });
-
