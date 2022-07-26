@@ -7,14 +7,13 @@
  *
  */
 
- export const difference = (array = [], values = []) => {
-    if (typeof array !== 'object' || typeof values !== 'object') {
-      throw new TypeError('arguments should be arrays');
-    }
-    if (array === null || values === null) {
-      throw new Error('arguments should be arrays');
-    }
-    const newArray = [... new Set(array)];
-    return newArray.filter((element) => !values.includes(element) )
-}
-  
+export const difference = (array = [], values = []) => {
+  if (typeof array !== 'object' || typeof values !== 'object') {
+    throw new TypeError('arguments should be arrays');
+  }
+  if (array === null || values === null) {
+    throw new Error('arguments should be arrays');
+  }
+  const newArray = [...new Set(array)];
+  return newArray.filter((element) => !values.includes(element));
+};
